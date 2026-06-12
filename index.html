@@ -7,26 +7,34 @@
     <title>cards Toggle</title>
 </head>
 <body>
-    <div class="card">
+    <h1>Paisagens</h1>
+   <div class="card" id="cartao1">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzfLkyWF2UTdRZjHdxKJyPz-zTtEcZyveapQ&s" alt="">
         <h2>Buraco do Padre</h2>
         <p>Um excelente ponto turistico em Ponta Grossa</p>
 </div>
-<div class="car desligar">
-    <button id="botao">ALternar</button>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzfLkyWF2UTdRZjHdxKJyPz-zTtEcZyveapQ&s">
-    <h2>Excelente ponto turistico em Foz do Iguaçu</h2>
+<div class="card desligar" id="cartao2">
+    <img src="https://static.wikia.nocookie.net/reileo/images/2/2a/2020-03-17_08.11.48.png/revision/latest?cb=20200317111158&path-prefix=pt-br">
+    <h2>Pedra do rei</h2>
+    <p>Excelente ponto turistico na África</p>
 </div>
-    <button id="botao">Alternar</button>
+    
+    
     <script>
-        cartao1 = document.getElementById("card1");
-        cartao2 = document.getElementById("card2");
-        botao = document.getElementById("botao");
-        
-        botao.addEventListener("click", ()=>{
+        cartao1 = document.getElementById("cartao1");
+        cartao2 = document.getElementById("cartao2");
+
+        cartao1.addEventListener("click", ()=>{
             cartao1.classList.toggle("desligar");
             cartao2.classList.toggle("desligar");
         })
+
+        cartao2.addEventListener("click", ()=>{
+            cartao1.classList.toggle("desligar");
+            cartao2.classList.toggle("desligar");
+        })
+
     </script>
+
 </body>
 </html>

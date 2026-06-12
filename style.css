@@ -1,13 +1,23 @@
 .card{
-    width: 100px;
+    width: 250px;
     border-radius: 15px;
     box-shadow: 2px 2px grey;
 }
 
-.card.img{
+.card img{
     width: 100%;
-    border radius: 15px;
+    border-radius: 15px;
 }
 
-.desligar
-display: none;
+.desligar{
+    display: none;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;             
+    place-items: center;      
+    grid-auto-flow: column;   
+    gap: 20px;                 
+}
